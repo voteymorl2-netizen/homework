@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product_detail</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        display: block;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .head {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        margin: auto;
+      }
+      .detail {
+        margin-top: 20px;
+      }
+      .head img {
+        width: 250px;
+        height: 350px;
+      }
+      .menu {
+        margin-bottom: 30px;
+        color: white;
+      }
+      .star {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .star_item {
+        background-color: gold;
+        border: none;
+      }
+      .reviews {
+        color: gold;
+      }
+      .price {
+        font-size: 18px;
+        color: green;
+        margin-top: 20px;
+      }
+      .text {
+        margin-top: 20px;
+        color: white;
+      }
+      .Quantity {
+        margin-top: 20px;
+        color: white;
+        font-size: 18px;
+      }
+      .input {
+        width: 50px;
+        border-radius: 5px;
+        border: none;
+        height: 20px;
+        margin: 5px;
+      }
+      .btn {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+      }
+      .btn_item {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(8, 8, 54);
+        border: none;
+        border-radius: 5px;
+        color: white;
+      }
+      .btn_item_1 {
+        width: 150px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        color: rgb(6, 6, 6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <img
+        src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+        alt=""
+      />
+      <div class="detail">
+        <h3 class="menu">Mens Casual Premium <br />Slim Fit T_shirts</h3>
+        <div class="star">
+          <div class="star_item">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="reviews">(300 reviews)</p>
+        </div>
+        <h3 class="price">$22.3</h3>
+        <p class="text">
+          This backpack has a simple and classic design with a navy-blue color.
+          <br />
+          It features a flap cover secured by two straps and a small leather
+          logo patch on the front.
+          <br />
+          The main compartment is spacious, suitable for carrying books,
+          clothes, or a laptop.
+          <br />
+          Made from durable, water-resistant fabric, it’s perfect for school,
+          travel, or daily use
+        </p>
+        <p class="Quantity">Quantity: <input class="input" type="number" /></p>
+        <div class="btn">
+          <button class="btn_item">Add to Cart</button>
+          <button class="btn_item_1">$ Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

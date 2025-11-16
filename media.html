@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(179, 179, 215);
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo h3 {
+        font-size: 18px;
+        color: #ff0000;
+      }
+      .logo img {
+        width: 54px;
+        height: 54px;
+      }
+
+      .item {
+        list-style: none;
+        text-decoration: none;
+        align-items: center;
+        margin-right: 2px;
+        color: black;
+      }
+      .icon {
+        color: #000;
+        align-items: center;
+      }
+      .home {
+        display: flex;
+        font-size: 24px;
+        gap: 50px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(179, 179, 215);
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      .home_under {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .home_under1 {
+        align-items: center;
+        gap: 2px;
+      }
+
+      @media (max-width: 1500px) {
+        .hearder {
+          display: flex;
+        }
+        .footer {
+          display: none;
+        }
+        .icon {
+          display: none;
+        }
+      }
+      @media (max-width: 448px) {
+        .logo {
+          display: flex;
+        }
+
+        .icon {
+          display: flex;
+        }
+        .footer {
+          display: flex;
+        }
+        .icon {
+          display: flex;
+        }
+        .home {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="https://img.icons8.com/?size=128&id=H8eSSjTJbXur&format=png"
+          alt=""
+        />
+        <h3>SHOPE</h3>
+      </div>
+      <ul class="home">
+        <li class="item"><a href=""></a>Home</li>
+        <li class="item"><a href=""></a>Product</li>
+        <li class="item"><a href=""></a>Contact</li>
+        <li class="item"><a href=""></a>About</li>
+      </ul>
+      <div class="icon">
+        <i data-lucide="menu"></i>
+      </div>
+    </div>
+    <div class="footer">
+      <ul>
+        <div class="home_under">
+          <div class="home_under1">
+            <i data-lucide="house"></i>
+            <li class="item">Home</li>
+          </div>
+          <div class="home_under1">
+            <i data-lucide="keyboard-music"></i>
+            <li class="item">Product</li>
+          </div>
+          <div class="home_under1">
+            <i data-lucide="contact"></i>
+            <li class="item">Contact</li>
+          </div>
+          <div class="home_under1">
+            <i data-lucide="search-slash"></i>
+            <li class="item">About</li>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
